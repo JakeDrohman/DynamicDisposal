@@ -29,5 +29,11 @@ namespace Dynamic_Disposal.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<Dynamic_Disposal.Models.Address> Addresses { get; set; }
+
+        public System.Data.Entity.DbSet<Dynamic_Disposal.Models.PickUpDay> PickUpDays { get; set; }
+
+        public System.Data.Entity.DbSet<Dynamic_Disposal.Models.ApplicationUser> ApplicationUsers { get; set; }
     }
 }
